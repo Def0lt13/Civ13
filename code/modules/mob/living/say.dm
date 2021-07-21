@@ -9,7 +9,7 @@ var/list/radio_prefixes = list(";", ":b", ":l", ":r", ":t", ":f",
 /mob/living/proc/get_default_language()
 	return default_language
 
-/mob/living/proc/is_muzzled()
+/mob/living/proc/is_muzzled() // тест вебхука
 	return FALSE
 
 /mob/living/proc/handle_speech_problems(var/message, var/verb)
