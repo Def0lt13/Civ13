@@ -48,7 +48,7 @@
 	return
 
 /obj/item/weapon/folder/attack_self(mob/user as mob)
-	var/dat = "<title>[name]</title>"
+	var/dat = "<meta charset=\"utf-8\"><title>[name]</title>"
 
 	for (var/obj/item/weapon/paper/P in src)
 		dat += "<A href='?src=\ref[src];remove=\ref[P]'>Remove</A> <A href='?src=\ref[src];rename=\ref[P]'>Rename</A> - <A href='?src=\ref[src];read=\ref[P]'>[P.name]</A><BR>"
@@ -78,10 +78,10 @@
 			var/obj/item/weapon/paper/P = locate(href_list["read"])
 			if (P && (P.loc == src) && istype(P))
 				if (!(istype(usr, /mob/living/human) || isghost(usr)))
-					usr << browse("<HTML><HEAD><TITLE>[P.name]</TITLE></HEAD><BODY>[stars(P.info)][P.stamps]</BODY></HTML>", "window=[P.name]")
+					usr << browse("<HTML><meta charset=\"utf-8\"><HEAD><TITLE>[P.name]</TITLE></HEAD><BODY>[stars(P.info)][P.stamps]</BODY></HTML>", "window=[P.name]")
 					onclose(usr, "[P.name]")
 				else
-					usr << browse("<HTML><HEAD><TITLE>[P.name]</TITLE></HEAD><BODY>[P.info][P.stamps]</BODY></HTML>", "window=[P.name]")
+					usr << browse("<HTML><meta charset=\"utf-8\"><HEAD><TITLE>[P.name]</TITLE></HEAD><BODY>[P.info][P.stamps]</BODY></HTML>", "window=[P.name]")
 					onclose(usr, "[P.name]")
 		else if (href_list["look"])
 			var/obj/item/weapon/photo/P = locate(href_list["look"])
