@@ -2,9 +2,9 @@
 	// epoch = required players
 
 	var/list/epochs = list(
-		//"Stone Age (?-3000 B.C.)" = 0,
-		"Chad Mode" = 0,
-		"Pre-Firearms (3000 B.C-1650 A.D.)" = 0,
+		"Stone Age (?-3000 B.C.)" = 0,
+		//"Chad Mode" = 0,
+		//"Pre-Firearms (3000 B.C-1650 A.D.)" = 0,
 		//"Bronze Age (3000 B.C.-400 A.D.)" = 0,
 		//"Dark Ages (400-700)" = 0,
 		//"Middle Ages (700-1450)" = 0,
@@ -12,17 +12,17 @@
 		//"Imperial Age (1650-1780)" = 0,
 		//"Industrial Age (1850-1895)" = 0,
 		//"Early Modern Era (1896-1930)" = 0,
-		"Early Fire Arms (1650-1930)" = 0,
-		"World War II (1931-1948)" = 0,
+		//"Early Fire Arms (1650-1930)" = 0,
+		//"World War II (1931-1948)" = 0,
 		//"Cold War Era (1949-1984)" = 0,
 		//"Modern Era (1985-2020)" = 0,
-		"Modern Fire Arms (1949-2021)" = 0,
-		"HRP TDM (Gulag, AOTD, Football, etc)" = 10,
+		//"Modern Fire Arms (1949-2021)" = 0,
+		//"HRP TDM (Gulag, AOTD, Football, etc)" = 10,
 		"Civilization 13 (Nomads)" = 0,
-		"Civilization 13 (Colony & Pioneers)" = 0,
+		//"Civilization 13 (Colony & Pioneers)" = 0,
 		//"Civilization 13 (Prison Camps)" = 15,
-		"Civilization 13 (Others)" = 0,
-		"Battle Royale" = 0,
+		//"Civilization 13 (Others)" = 0,
+		//"Battle Royale" = 0,
 	)
 	var/ready = TRUE
 	var/admin_triggered = FALSE
